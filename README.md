@@ -40,56 +40,56 @@ Utilizing the module involves the following steps:
 
 3. **Basic MySQL Operations:**
 
-   ```javascript
-   // Insert a new user
-    const newUser = { username: "mehmet", email: "mehmet@muzik.red" };
-    mysql.insert("users", newUser)
-      .then((result) => {
-        console.log("Insert Result:", result);
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-      });
-   
-    // Select a user from the database
-    mysql.selectOne("users", "*", "id = 1")
-      .then((user) => {
-        console.log("User:", user);
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-      });
-    
-    // Select all data from a table
-    mysql.selectAll("user", "*")
-      .then((products) => {
-        console.log("All Users:", products);
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-      });
-    
-    // Update data in a table
-    const updatedData = { name: "Mehmet Genç" };
-    mysql.update("users", updatedData, "id = 1")
-      .then((result) => {
-        console.log("Update Result:", result);
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-      });
-    
-    // Remove data from a table
-    mysql.remove("users", "id = 1")
-      .then((result) => {
-        console.log("Removal Result:", result);
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-      });
-    
-    // Similar steps are followed for other operations.
-   ```
+```javascript
+  // Insert a new user
+  const newUser = { username: "mehmet", email: "mehmet@muzik.red" };
+  mysql.insert("users", newUser)
+    .then((result) => {
+      console.log("Insert Result:", result);
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
+  
+  // Select a user from the database
+  mysql.selectOne("users", "*", "id = 1")
+    .then((user) => {
+      console.log("User:", user);
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
+  
+  // Select all data from a table
+  mysql.selectAll("user", "*")
+    .then((products) => {
+      console.log("All Users:", products);
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
+  
+  // Update data in a table
+  const updatedData = { name: "Mehmet Genç" };
+  mysql.update("users", updatedData, "id = 1")
+    .then((result) => {
+      console.log("Update Result:", result);
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
+  
+  // Remove data from a table
+  mysql.remove("users", "id = 1")
+    .then((result) => {
+      console.log("Removal Result:", result);
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
+  
+  // Similar steps are followed for other operations.
+```
 
 4. **Closing the Connection Pool:**
 
