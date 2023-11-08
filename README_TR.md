@@ -54,7 +54,7 @@ mysql.query("SELECT * FROM users WHERE id = ?", [1])
 
 ```javascript
 // Yeni bir kullanıcı ekleme
-const newUser = { username: "new_user", email: "new_user@example.com" };
+const newUser = { username: "Mehmet", email: "mehmet@muzik.red" };
 mysql.insert("users", newUser)
  .then((result) => {
   console.log("Ekleme Sonucu:", result);
@@ -65,8 +65,8 @@ mysql.insert("users", newUser)
 
 // Veritabanından bir kullanıcıyı seçme
 mysql.selectOne("users", "*", "id = 1")
-.then((user) => {
- console.log("Kullanıcı:", user);
+.then((result) => {
+ console.log("Kullanıcı:", result);
 })
 .catch((error) => {
  console.error("Hata:", error);
@@ -74,8 +74,8 @@ mysql.selectOne("users", "*", "id = 1")
 
 // Bir tablodaki tüm verileri seç
 mysql.selectAll("user", "*")
- .then((products) => {
-  console.log("Bütün Kullanıcılar:", products);
+ .then((result) => {
+  console.log("Bütün Kullanıcılar:", result);
  })
  .catch((error) => {
   console.error("Hata:", error);
