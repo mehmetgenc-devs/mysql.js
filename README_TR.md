@@ -7,7 +7,7 @@ Bu Node.js modülü, MySQL veritabanı ile etkileşimde bulunmak için kullanıl
 Bu modülü kurmak için aşağıdaki komutu çalıştırın:
 
 ```bash
- npm install @imehmetgenc/mysql.js
+npm install @imehmetgenc/mysql.js
 ```
 
 ## Kullanım
@@ -42,58 +42,58 @@ mysql.query("SELECT * FROM users WHERE id = ?", [1])
 3. **Temel MySQL İşlemleri:**
 
 ```javascript
- // Yeni bir kullanıcı ekleme
- const newUser = { username: "new_user", email: "new_user@example.com" };
- mysql.insert("users", newUser)
-  .then((result) => {
-   console.log("Ekleme Sonucu:", result);
-  })
-  .catch((error) => {
-   console.error("Hata:", error);
-  });
+// Yeni bir kullanıcı ekleme
+const newUser = { username: "new_user", email: "new_user@example.com" };
+mysql.insert("users", newUser)
+ .then((result) => {
+  console.log("Ekleme Sonucu:", result);
+ })
+ .catch((error) => {
+  console.error("Hata:", error);
+ });
 
- // Veritabanından bir kullanıcıyı seçme
- mysql.selectOne("users", "*", "id = 1")
-  .then((user) => {
-   console.log("Kullanıcı:", user);
-  })
-  .catch((error) => {
-   console.error("Hata:", error);
-  });
+// Veritabanından bir kullanıcıyı seçme
+mysql.selectOne("users", "*", "id = 1")
+.then((user) => {
+ console.log("Kullanıcı:", user);
+})
+.catch((error) => {
+ console.error("Hata:", error);
+});
 
-  // Bir tablodaki tüm verileri seç
-  mysql.selectAll("user", "*")
-   .then((products) => {
-    console.log("Bütün Kullanıcılar:", products);
-   })
-   .catch((error) => {
-    console.error("Hata:", error);
-   });
-  
-  // Bir tablodaki verileri güncelleme
-  const updatedData = { name: "Mehmet Genç" };
-  mysql.update("users", updatedData, "id = 1")
-   .then((result) => {
-    console.log("Güncelleme Sonucu:", result);
-   })
-   .catch((error) => {
-    console.error("Hata:", error);
-   });
-  
-  // Verileri tablodan kaldırma
-  mysql.remove("users", "id = 1")
-   .then((result) => {
-    console.log("Silinme Sonucu:", result);
-   })
-   .catch((error) => {
-    console.error("Hata:", error);
-   });
+// Bir tablodaki tüm verileri seç
+mysql.selectAll("user", "*")
+ .then((products) => {
+  console.log("Bütün Kullanıcılar:", products);
+ })
+ .catch((error) => {
+  console.error("Hata:", error);
+ });
+
+// Bir tablodaki verileri güncelleme
+const updatedData = { name: "Mehmet Genç" };
+mysql.update("users", updatedData, "id = 1")
+ .then((result) => {
+  console.log("Güncelleme Sonucu:", result);
+ })
+ .catch((error) => {
+  console.error("Hata:", error);
+ });
+
+// Verileri tablodan kaldırma
+mysql.remove("users", "id = 1")
+ .then((result) => {
+  console.log("Silinme Sonucu:", result);
+ })
+ .catch((error) => {
+  console.error("Hata:", error);
+ });
 ```
 
 4. **Bağlantı Havuzunu Kapatma:**
 
 ```javascript
-  mysql.closePool();
+ mysql.closePool();
 ```
 
 Bu örnekler, MySQL veritabanı ile etkileşimde bulunmak için bu modülü nasıl kullanacağınızı gösterir.
