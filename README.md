@@ -26,7 +26,7 @@ const mysql = new Mysql({
   database: "your_database",
 });
 
-//Used Event
+//Event Usage
 mysql.on("ready", (db) => {
   console.log("I'm ready");
 });
