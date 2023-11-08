@@ -17,7 +17,7 @@ Modülün kullanımı aşağıdaki gibi adımları içerir:
 1. **Modülü İçe Aktarın:**
 
 ```javascript
-const { Mysql } = require("./mysqlClient.js");
+const { Mysql } = require("@imehmetgenc/mysql.js");
 
 const mysql = new Mysql({
  host: "localhost",
