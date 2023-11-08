@@ -93,7 +93,7 @@ mysql.remove("users", "id = 1")
 4. **Bağlantı Havuzunu Kapatma:**
 
 ```javascript
- mysql.closePool();
+ mysql.destroy();
 ```
 
 Bu örnekler, MySQL veritabanı ile etkileşimde bulunmak için bu modülü nasıl kullanacağınızı gösterir.
