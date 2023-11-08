@@ -87,8 +87,6 @@ Utilizing the module involves the following steps:
     .catch((error) => {
       console.error("Error:", error);
     });
-  
-  // Similar steps are followed for other operations.
 ```
 
 4. **Closing the Connection Pool:**
