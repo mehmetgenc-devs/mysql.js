@@ -4,7 +4,6 @@ const EventEmitter = require("events");
 class MysqlClient extends EventEmitter {
   constructor(options) {
     super();
-
     this._events = {
       Ready: "ready",
       Disconnected: "disconnected",
