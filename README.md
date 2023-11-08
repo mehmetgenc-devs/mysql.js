@@ -42,7 +42,7 @@ mysql.on("disconnected", (db) => {
 
 ```javascript
 // Query execution example
-mysql.query("SELECT * FROM users WHERE id = ?", [1])
+mysql.query("SELECT * FROM users WHERE id = ?", [1]) // "SELECT * FROM users WHERE id = 1"
 .then((result) => {
 console.log("Query Results:", result);
 })
