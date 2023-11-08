@@ -1,0 +1,32 @@
+{
+    "name": "@imehmetgenc/mysql.js",
+    "version": "1.0.0",
+    "description": "This Node.js package simplifies MySQL usage and helps you perform database operations more efficiently in the Node.js environment.",
+    "main": "index.js",
+    "scripts": {
+        "test": "node test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/imehmetgenc/mysql.js.git"
+    },
+    "keywords": [
+        "imehmetgenc",
+        "mega",
+        "database",
+        "db",
+        "mysql",
+        "sql",
+        "mariadb"
+    ],
+    "author": "MEGA <imehmetgenc> (https://mehmetgenc.dev)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/imehmetgenc/mysql.js/issues"
+    },
+    "homepage": "https://github.com/imehmetgenc/mysql.js#readme",
+    "devDependencies": {
+        "mysql2": "^3.6.3",
+        "events": "^3.3.0"
+    }
+}
