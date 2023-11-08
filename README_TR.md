@@ -41,7 +41,7 @@ mysql.on("disconnected", (db) => {
 2. **Sorgu Yapma:**
 
 ```javascript
-mysql.query("SELECT * FROM users WHERE id = ?", [1])
+mysql.query("SELECT * FROM users WHERE id = ?", [1]) // "SELECT * FROM users WHERE id = 1"
  .then((results) => {
   console.log("Sorgu Sonuçları:", results);
  })
