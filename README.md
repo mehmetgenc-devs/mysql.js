@@ -25,6 +25,17 @@ const mysql = new Mysql({
   password: "your_password",
   database: "your_database",
 });
+
+//Used Event
+mysql.on("ready", (db) => {
+  console.log("I'm ready");
+});
+mysql.on("error", (error) => {
+  console.log("Mysql Error: ", error);
+});
+mysql.on("disconnected", (db) => {
+  console.log("Mysql disconnected.");
+});
 ```
 
 2. **Executing Queries:**
