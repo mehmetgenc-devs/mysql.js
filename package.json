@@ -25,8 +25,10 @@
         "url": "https://github.com/imehmetgenc/mysql.js/issues"
     },
     "homepage": "https://github.com/imehmetgenc/mysql.js#readme",
+    "dependencies": {
+        "mysql2": "^3.6.3"
+    },
     "devDependencies": {
-        "mysql2": "^3.6.3",
         "events": "^3.3.0"
     }
 }
