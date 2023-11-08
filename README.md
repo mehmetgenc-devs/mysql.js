@@ -92,7 +92,7 @@ mysql.remove("users", "id = 1")
 4. **Closing the Connection Pool:**
 
 ```javascript
-mysql.closePool();
+mysql.destroy();
 ```
 
 These examples demonstrate how to use this module to interact with a MySQL database.
