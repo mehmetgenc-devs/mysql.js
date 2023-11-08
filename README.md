@@ -10,6 +10,8 @@ To install this module, run the following command:
 npm install @imehmetgenc/mysql.js
 ```
 
+## Usage
+
 Utilizing the module involves the following steps:
 
 1. **Import the Module:**
