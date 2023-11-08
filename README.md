@@ -43,8 +43,8 @@ mysql.on("disconnected", (db) => {
 ```javascript
 // Query execution example
 mysql.query("SELECT * FROM users WHERE id = ?", [1])
-.then((results) => {
-console.log("Query Results:", results);
+.then((result) => {
+console.log("Query Results:", result);
 })
 .catch((error) => {
 console.error("Query Error:", error);
@@ -66,8 +66,8 @@ mysql.insert("users", newUser)
 
 // Select a user from the database
 mysql.selectOne("users", "*", "id = 1")
-  .then((user) => {
-    console.log("User:", user);
+  .then((result) => {
+    console.log("User:", result);
   })
   .catch((error) => {
     console.error("Error:", error);
@@ -75,8 +75,8 @@ mysql.selectOne("users", "*", "id = 1")
 
 // Select all data from a table
 mysql.selectAll("user", "*")
-  .then((products) => {
-    console.log("All Users:", products);
+  .then((result) => {
+    console.log("All Users:", result);
   })
   .catch((error) => {
     console.error("Error:", error);
