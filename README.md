@@ -110,6 +110,6 @@ mysql.destroy();
 
 These examples demonstrate how to use this module to interact with a MySQL database.
 
-## Lisans
+## License
 
 This project is licensed under the MIT license. For more information, please refer to the [LICENSE file](LICENSE) .
